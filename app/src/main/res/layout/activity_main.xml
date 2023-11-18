@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="50dp"
+    android:paddingTop="80dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_start_server"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start_server"
+        app:layout_constraintVertical_weight="1">
+
+        <TextView
+            android:id="@+id/sample_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:text="first start server, after request action" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_start_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Server!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_open_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="OPEN AIR"
+        app:layout_constraintStart_toEndOf="@+id/btn_start_server"
+        app:layout_constraintTop_toTopOf="@+id/btn_start_server" />
+
+    <Button
+        android:id="@+id/btn_close_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="CLOSE AIR"
+        app:layout_constraintStart_toEndOf="@+id/btn_open_air"
+        app:layout_constraintTop_toTopOf="@+id/btn_open_air" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="CLEAR"
+        app:layout_constraintStart_toEndOf="@+id/btn_close_air"
+        app:layout_constraintTop_toTopOf="@+id/btn_close_air" />
+</androidx.constraintlayout.widget.ConstraintLayout>

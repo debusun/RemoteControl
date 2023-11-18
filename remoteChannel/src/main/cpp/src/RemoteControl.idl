@@ -1,0 +1,16 @@
+enum OperationType
+{
+    SEND_ACTION,
+    ACTION_REPLY
+};
+
+struct RequestType
+{
+    OperationType operation;
+    string action;
+};
+
+struct ReplyType
+{
+    string reply;
+};
